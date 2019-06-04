@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CartActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cart Details"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="19dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_shopping_cart"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textSize="18dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve"
+            android:layout_marginTop="-10dp"
+            android:backgroundTint="#fff"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/snake"
+                    android:layout_margin="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="italian Herb"
+                            android:textSize="20dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"/>
+
+                    </RelativeLayout>
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plant_desc"
+                        android:layout_marginStart="10dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs-300/-"
+                            android:layout_marginStart="10dp"
+                            android:textColor="#448302"
+                            android:textSize="16dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:layout_margin="10dp"
+                            android:textSize="25sp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:drawableLeft="@drawable/ic_add"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:drawableRight="@drawable/ic_remove"
+                            android:backgroundTint="#9BF33E"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PayMent Details"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_marginHorizontal="50dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 300"
+                    android:textColor="#A30909"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service Tax"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_marginHorizontal="50dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 24"
+                    android:textColor="#A30909"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Charges"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_marginHorizontal="50dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 0"
+                    android:textColor="#A30909"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Payable"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_marginHorizontal="50dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 324"
+                    android:textColor="#A30909"
+                    android:textSize="18dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Go FOr payment- Rs 324"
+            android:letterSpacing="0.1"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="bottom"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
